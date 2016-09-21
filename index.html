@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>datalist demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>datalist demo</h1>
+
+    <label for="countries-input">Enter Country name:</label>
+    <input id="countries-input" type="text" list="countries" />
+
+    <datalist id="countries">
+        <!-- fallback -->
+        <span>Or select:</span>
+        <select>
+            <!-- list -->
+            <option value="Russia">Russia</option>
+            <option value="United States">United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+        </select>
+    </datalist>
+</body>
+</html>
